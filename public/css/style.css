@@ -85,3 +85,14 @@
     margin: auto;
 }
 
+.vertical-line {
+    border-left: 2px solid;
+    box-sizing: border-box;
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+.horizontal-line {
+    color: #ffffff;
+    opacity: 0.3;
+}
