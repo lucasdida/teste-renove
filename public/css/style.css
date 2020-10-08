@@ -96,3 +96,154 @@
     color: #ffffff;
     opacity: 0.3;
 }
+
+/* ========== CONTENT ==========*/
+
+.content-bg {
+    background-color: #efefef;
+}
+
+.content-marg {
+    margin-left: 6%;
+}
+
+.links {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.links button {
+    border-radius: 20px;
+    padding: 0.105rem 0.75rem;
+    color: #6f6f6f;
+    border-color: #6f6f6f;
+}
+
+.links a {
+    color: #007bff !important; 
+    cursor: pointer;
+}
+
+.links a:hover {
+    text-decoration: underline !important;
+}
+
+.links span {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.product .col-sm-8 {
+    margin-left: 4rem;
+    margin-right: -1rem;
+}
+
+.product .col-sm-2 {
+    margin-right: 4rem;
+    min-width: 20rem;
+}
+
+.product-image img {
+    width: 28rem;
+    height: 25.6rem;
+    margin-top:-15.5rem;
+}
+
+.product-miniatures img {
+    width: 5rem;
+    height:5rem;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card div {
+    display: inline-block;
+}
+
+.delivery-normally {
+    background-color: #00a650;
+    color: #ffffff;
+    font-size: 0.6rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.product-obs {
+    margin-left: 1.5rem;
+    max-width: 16.6rem;
+    display: inline-block;
+}
+
+.product-obs a {
+    text-decoration:underline !important; 
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.stars {
+    align-items: center;
+    color: gold;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.parentheses {
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.product-text {
+    margin-top: 1rem;
+}
+
+.product-text span {
+    font-size: 0.8rem;
+}
+
+.product-text-color {
+    color: #747474;
+}
+
+.cep-calc {
+    margin-top: 1.5rem;
+}
+
+.cep-calc label {
+    margin-bottom: 0;   
+}
+
+.cep-calc input {
+    width: 130%;
+}
+
+.share {
+    float: right;
+}
+
+.share i {
+    margin-left:1rem;
+    cursor: pointer;
+}
+
+.expire {
+    background-color: #fe9393;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.prices {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.prices .old-price {
+    text-decoration: line-through;
+}
+
+.prices .new-price {
+    font-size: 30px;
+}

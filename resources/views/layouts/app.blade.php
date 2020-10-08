@@ -62,10 +62,9 @@
 
         @yield('content')
 
-
         <!-- FOOTER -->
         <footer class="page-footer pt-4 pb-4 footer-bg-dark">
-            <div class="container-fluid text-md-left footer-dark">
+            <div class="container-fluid text-md-left footer-dark" style="width:auto;">
                 <div class="row">
                     <div class="col-sm-3 d-flex">
                         <div class="footer-text-dark" style="margin-right:1rem;">
