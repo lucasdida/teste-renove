@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <nav class="navbar sticky-top navbar-light navbar-bg-dark">
+        <nav class="navbar navbar-light navbar-bg-dark">
             <div class="col-sm-6">  
                 Enviamos para todo o Brasil
             </div>
@@ -207,11 +207,9 @@
                 </div>
             </div>
             <hr class="horizontal-line">
-            <ul class="list-unstyled list-inline text-center py-2 footer-text" style="margin-top:-15px;">
-                <li class="list-inline-item">
-                    © 2020 Bemmenininha • Todos os direitos reservados. Avenida Presidente Kennedy, 3106, Aviação Praia Grande, São Paulo, Br
-                </li>
-            </ul>
+            <div class="footer-text text-center" style="margin-top:-8px; padding-bottom:8px">
+                <span>© 2020 Bemmenininha • Todos os direitos reservados. Avenida Presidente Kennedy, 3106, Aviação Praia Grande, São Paulo, Br</span>
+            </div>
         </footer>
 
         <script src="{{ asset('js/jquery.js') }}"></script>
