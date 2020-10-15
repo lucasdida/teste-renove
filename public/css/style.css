@@ -339,3 +339,84 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.opinions {
+    margin-top: 4rem;
+}
+
+.opinions .col {
+    margin-bottom: 2rem;
+}
+
+.opinions h5 {
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.client-circle {
+    background-color: #000000;
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.client-review span {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.client-review li {
+    margin-top: 1rem;
+}
+
+.client-review ul {
+    margin-bottom: 1.5rem;
+}
+
+.client-review a {
+    font-size: 13px;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+.client-opinion {
+    color: #000000;
+    margin-top: -3rem;
+}
+
+.percentage-circle {
+    background-color: #ffffff;
+    color: #000000;
+    width: 7rem;
+    height: 5.5rem;
+    border-style: solid;
+    border-color: #ffd700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.suggestions {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.suggestions .col {
+    max-width: 18%;
+}
+
+.suggestions .card {
+    cursor: pointer;
+    border: none;
+}

@@ -1,4 +1,4 @@
-@extends('layouts.app', ["current" => "tshirt"])
+@extends('layouts.app', ["current" => "product"])
 
 @section('content')
 
@@ -34,7 +34,7 @@
                         <h5 class="product-text-color">Camisa feminina leão manga curta</h5>
                         
                         <div class="stars evaluate">
-                            ★★★★★ <span class="parentheses product-text-color">(118)</span>
+                            ★★★★☆ <span class="parentheses product-text-color">(118)</span>
                         </div>
                         <a style="color: #4583d5; float: right;">avaliar o produto</a>
                         <div class="product-text product-text-color">
@@ -127,7 +127,7 @@
         </div>
     </div>
 
-    <div class="row desc-product">
+    <div class="row desc-product" style="margin-bottom:2rem">
         <div class="col">    
             <div class="card" style="border:none">
                 <div class="card-body">
@@ -213,10 +213,138 @@
                             <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
                         </div>
                     </div>
+
+                    <div class="row opinions d-flex d-justify-content-center">
+                        <div class="col">
+                            <h5>Opiniões sobre o produto</h5>
+
+                            <div class="client-review">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex">
+                                        <div class="client-circle">F</div>
+                                        <div style="margin-top:-5px">
+                                            <span class="font-weight-bold d-flex" style="color:#000000">
+                                                Fernando - <div class="stars evaluate d-flex" style="margin-top:-2px">★★★★☆</div>
+                                            </span>
+                                            <span class="d-block">Review do produto</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="client-circle">F</div>
+                                        <div style="margin-top:-5px">
+                                            <span class="font-weight-bold d-flex" style="color:#000000">
+                                                Fernando - <div class="stars evaluate d-flex" style="margin-top:-2px">★★★★☆</div>
+                                            </span>
+                                            <span class="d-block">Review do produto</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex" style="opacity:0.6">
+                                        <div class="client-circle">F</div>
+                                        <div style="margin-top:-5px">
+                                            <span class="font-weight-bold d-flex" style="color:#000000">
+                                                Fernando - <div class="stars evaluate d-flex" style="margin-top:-2px">★★★★☆</div>
+                                            </span>
+                                            <span class="d-block">Review do produto</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="font-weight-bold">Ver todas as opiniões <i class="fas fa-arrow-right"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="vertical-line" style="color:#cecece; margin-top:5rem; margin-bottom:3rem"></div>
+                        <div class="col">
+                            <h5>Opiniões dos Clientes (13)</h5>
+                            <div class="client-opinion d-flex">
+                                <span class="font-weight-bold" style="font-size:6rem">4.0</span>
+                                <div style="margin-top:2rem">
+                                    <div class="stars evaluate" style="font-size:2rem">★★★★☆</div>
+                                    <span class="d-block font-weight-bold" style="margin-left:1.5rem; font-size:13px">Média entre 23 opiniões<span>
+                                </div>
+                            </div>
+                            <hr class="horizontal-line" style="color:#cecece; opacity:1">
+                            <div class="d-flex">
+                                <div class="percentage-circle font-weight-bold">98%</div>
+                                <span class="font-weight-bold" style="color:#8c8a8a; font-size:1.2rem; margin-left:1rem; margin-top:0.5rem">Recomendaram esse produto</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <span class="font-weight-bold suggestions" style="color:#747474; font-size:20px; margin-top:2rem;">Quem viu esse produto também comprou</span>
+
+    <div class="row suggestions d-flex d-justify-content-center">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/hd.png">
+                    HD SSD 128GB Sata
+                    Modelo Samsung
+                    <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
+                    <span style="font-weight:400; font-size:11px">Ou 5x de R$ 29,90 sem juros</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
 </div>
