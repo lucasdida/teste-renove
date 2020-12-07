@@ -15,7 +15,7 @@
 
     <div class="row product">
         <div class="col-sm-8">
-            <div class="card product-card" style="border:none">
+            <div class="card product-card">
                 <div class="card-body">
                     <div class="product-miniatures">
                         <img src="/images/roupa-leao.png">
@@ -33,21 +33,21 @@
                         
                         <h5 class="product-text-color">Camisa feminina leão manga curta</h5>
                         
-                        <div class="stars evaluate">
+                        <div class="stars">
                             ★★★★☆ <span class="parentheses product-text-color">(118)</span>
                         </div>
-                        <a style="color: #4583d5; float: right;">avaliar o produto</a>
+                        <a class="evaluate" style="color: #4583d5;">avaliar o produto</a>
                         <div class="product-text product-text-color">
                             <span>Lorem Ipsum é um texto fictício da indústria de impressão e composição. 
                                   Lorem Ipsum tem sido o texto fictício padrão da indústria.</span>        
                         </div>
-                        <a class="product-text-color">mais informações</a>
+                        <a class="more-info product-text-color">mais informações</a>
                         <div class="cep-calc product-text-color">
                             <label for="cep"><h6>Simular Frete</h6></label>
                             <input type="text" class="form-control" id="cep" placeholder="Informe o seu CEP">
                         </div>
 
-                        <div class="share product-text-color" style="margin-top: 2rem;">
+                        <div class="share product-text-color d-block" style="margin-top:16%; margin-left:50%; position:static">
                             <h6>Compartilhar</h6>
                         </div>
                         <div class="share product-text-color">
@@ -57,20 +57,21 @@
                             <i class="fab fa-pinterest"></i>
                             <i class="far fa-envelope"></i>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-2">
-            <div class="card price-card" style="border:none">
+            <div class="card price-card">
                 <div class="card-body">
                     <div class="expire d-flex">
                         <div>
-                            <i class="far fa-clock" style="font-size:2.3rem;"></i>
+                            <i class="far fa-clock clock-icon"></i>
                         </div>
-                        <div>
-                            <span class="font-weight-bold" style="padding-left:15px;">OFERTA EXPIRA EM:</span>
+                        <div class="offer-box">
+                            <span class="font-weight-bold offer-text">OFERTA EXPIRA EM:</span>
                             <span class="d-block" style="padding-left:15px; font-size:13px; text-decoration: underline; margin-top:-7px;">3 dias - 19:38:25</span>
                         </div>
                     </div>
@@ -87,17 +88,19 @@
                         </select>
                         5 unid. em estoque
 
-                        <span class="font-weight-bold" style="font-size:0.6rem; color:black">Quantidade: </span>
+                        <div>
+                            <span class="font-weight-bold" style="font-size:0.6rem; color:black">Quantidade: </span>
 
-                        <select style="border:none; width:32%; font-size:0.7rem">
-                            <option value="1">1 unidade</option>
-                            <option value="2">2 unidades</option>
-                            <option value="3">3 unidades</option>
-                            <option value="4">4 unidades</option>
-                            <option value="5">5 unidades</option>
-                        </select>
+                            <select class="select-quantity">
+                                <option value="1">1 unidade</option>
+                                <option value="2">2 unidades</option>
+                                <option value="3">3 unidades</option>
+                                <option value="4">4 unidades</option>
+                                <option value="5">5 unidades</option>
+                            </select>
 
-                        <span style="font-size:0.6rem">(15 unidades disponíveis)<span>
+                            <span style="font-size:0.6rem">  (15 unidades disponíveis)<span>
+                        </div>
                     </div>
                     <div class="buttons-buy-add">
                         <button type="button" class="btn font-weight-bold btn-buy">Comprar agora</button>
@@ -109,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="card guaranteed-purchase" style="border:none; margin-top:2px;">
+            <div class="card guaranteed-purchase" style="margin-top:2px;">
                 <div class="card-body">
                     <span style="color:#007bff;">Compra Garantida</span>, receba o produto que está esperando ou devolvemos o dinheiro.
                     <div class="creditcard-images" style="margin-bottom:-1px">
@@ -127,9 +130,25 @@
         </div>
     </div>
 
-    <div class="row desc-product" style="margin-bottom:2rem">
+    <div class="row cep-calc-mobile" style="margin-top:1rem">
+        <div class="col" style="padding:0">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-sm-8" style="display:inline-block">
+                        <label class="font-weight-bold" for="cep-mobile">Calcule o frete e prazo</label>
+                        <input class="form-control form-control-lg cep-mobile d-flex" type="text" placeholder="Digite o cep" name="cep-mobile" id="cep-mobile">
+                    </div>
+                    
+                    <button type="button" class="btn font-weight-bold btn-cep-mobile">OK</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row desc-product">
         <div class="col">    
-            <div class="card" style="border:none">
+            <div class="card desc-product-card">
                 <div class="card-body">
                     <span class="d-block tittle font-weight-bold">DESCRIÇÃO DO PRODUTO</span>
                     Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto
@@ -142,7 +161,10 @@
                     <div class="call-center text-center font-weight-bold">
                         Fale com a Central de Atendimento ao Cliente
                     </div>
-
+                </div>
+            </div>
+            <div class="card product-details-card">
+                <div class="card-body">
                     <span class="d-block tittle font-weight-bold">DETALHES DO PRODUTO</span>
 
                     <table class="table-bordered tb-specification font-weight-bold">
@@ -173,7 +195,12 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
 
+                <a class="more-info">continuar conteúdo...</a>
+            </div>
+            <div class="card related-products-card">
+                <div class="card-body">
                     <span class="d-block tittle font-weight-bold">PRODUTOS RELACIONADOS</span>
 
                     <div class="row related-products">
@@ -276,11 +303,11 @@
 
     <span class="font-weight-bold suggestions" style="color:#747474; font-size:20px; margin-top:2rem;">Quem viu esse produto também comprou</span>
 
-    <div class="row suggestions d-flex d-justify-content-center">
+    <div class="row suggestions suggest-cards d-flex d-justify-content-center">
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -291,7 +318,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -302,7 +329,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -313,7 +340,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -324,7 +351,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -335,7 +362,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <img src="images/hd.png">
+                    <img src="images/hd.png" class="suggestion-product">
                     HD SSD 128GB Sata
                     Modelo Samsung
                     <span class="d-block font-weight-bold" style="color:black; margin-top:7px; margin-bottom:-8px">R$ 349,90</span>
@@ -345,7 +372,18 @@
         </div>
     </div>
     
-
+    <div class="row product-buttons">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="buttons-buy-add-mobile">
+                        <button type="button" class="btn font-weight-bold btn-buy">Comprar agora</button>
+                        <button type="button" class="btn font-weight-bold btn-add">Adicionar a sacola</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

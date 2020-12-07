@@ -21,13 +21,40 @@
                 (13) 98800 - 5400
             </div>
         </nav>
+
+        <div class="navbar-mobile">
+            <nav class="navbar navbar-light navbar-bg-light center">
+                <div class="col">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none">
+                        <ion-icon name="menu-outline" class="icons-head" style="vertical-align:middle; font-size:2.5rem"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="col" style="margin-right:5%; margin-left:5%">
+                    <a class="navbar-brand" href="#">
+                        <img src="/images/bem_menininha_logo.png" width="150" height="38" class="d-inline-block align-top" alt="">
+                    </a>
+                </div>
+
+                <div class="col" style="font-size: 0.8rem;">
+                    Olá, <span class="font-weight-bold">Carlos.</span><ion-icon name="cart-outline" class="cart-button" style="vertical-align:middle"></ion-icon>
+                </div>
+            </nav>      
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-light navbar-bg-light">
-            <div class="col-sm-2">
+            <div class="col-sm-3">
                 <a class="navbar-brand" href="#">
                     <img src="/images/bem_menininha_logo.png" width="150" height="38" class="d-inline-block align-top" alt="">
                 </a>
             </div>
-            <div class="col-sm-7" style="margin-top: 10px;">
+            <div class="col" style="margin-top: 10px;">
                 <form class="form-inline form-search">
                     <input class="form-control mr-sm-2 search-box" style="width:100%" type="search" placeholder="Busque aqui o seu produto" aria-label="Search">
                     <button class="submit-search" type="submit">
@@ -35,8 +62,8 @@
                     </button>
                 </form>
             </div>
-            <div class="col-sm-2">
-                Olá, <span class="font-weight-bold" style="font-size: 1.2rem;">Carlos.</span><ion-icon name="cart-outline" size="large" style="vertical-align:middle"></ion-icon>
+            <div class="col-sm-3">
+                Olá, <span class="font-weight-bold">Carlos.</span><ion-icon name="cart-outline" size="large" style="vertical-align:middle"></ion-icon>
             </div>
         </nav>
         <nav class="navbar navbar-light navbar-bg-light">
@@ -47,16 +74,16 @@
                             <ion-icon name="menu-outline" class="icons-head" style="vertical-align:middle;"></ion-icon><span class="font-weight-bold">Todas as categorias</span><ion-icon name="chevron-down-outline" class="icons-head" style="vertical-align:middle;"></ion-icon>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Categoria 1</a>
-                        <a class="dropdown-item" href="#">Categoria 2</a>
+                            <a class="dropdown-item" href="#">Categoria 1</a>
+                            <a class="dropdown-item" href="#">Categoria 2</a>
+                        </div>
                     </li>
                 </ul>
             </div>
-                <div class="col-sm-8" style="margin-left:-8rem;">
-                    <a class="head-links" style="margin-left:-3rem">Mais vendidas</a>
-                    <a class="head-links">Ofertas do dia</a>
-                    <a class="head-links">Atendimento ao Cliente</a>
-                </div>
+            <div class="col navbar-links">
+                <a class="head-links first-link">Mais vendidas</a>
+                <a class="head-links">Ofertas do dia</a>
+                <a class="head-links">Atendimento ao Cliente</a>
             </div>
         </nav>
 
