@@ -4,7 +4,7 @@
 
 
 <div class="container-fluid content-bg">
-    <div class="row links">
+    <div class="row links links-desk">
         <div class="col-sm-1.5 content-marg">
             <button type="button" class="btn btn-outline-dark font-weight-bold">Voltar a lista</button>
         </div>
@@ -18,10 +18,10 @@
             <div class="card product-card">
                 <div class="card-body">
                     <div class="product-miniatures">
-                        <img src="/images/roupa-leao.png">
-                        <img src="/images/roupa-leao-red.png">
-                        <img src="/images/roupa-leao-blue.png">
-                        <img src="/images/roupa-leao-green.png">
+                        <img class="product-min" src="/images/roupa-leao.png">
+                        <img class="product-min" src="/images/roupa-leao-red.png">
+                        <img class="product-min" src="/images/roupa-leao-blue.png">
+                        <img class="product-min" src="/images/roupa-leao-green.png">
                     </div>
                     <div class="product-image">
                         <img src="/images/roupa-leao.png">
@@ -31,21 +31,54 @@
                             <span>Entregando normalmente</span>
                         </div>
                         
+                        <div class="row links links-mobile">
+                            <div class="col">
+                                <span><</span><a>Camiseta feminina leão manga curta</a>
+                            </div>
+                        </div>
+
                         <h5 class="product-text-color">Camisa feminina leão manga curta</h5>
                         
-                        <div class="stars">
+                        <div class="stars" style="display:inline-block">
                             ★★★★☆ <span class="parentheses product-text-color">(118)</span>
                         </div>
                         <a class="evaluate" style="color: #4583d5;">avaliar o produto</a>
+
+                        <!-- CAROUSEL MOBILE-->
+                        <div id="carouselExampleIndicators" class="carousel slide d-block center" data-ride="carousel" style="width:25rem; margin-top:30px;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="/images/roupa-leao.png">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="/images/roupa-leao-red.png">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="/images/roupa-leao-blue.png">
+                                </div> 
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="/images/roupa-leao-green.png">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators" style="position:inherit">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                        </div>
+                        <!-- ------ -->
+
                         <div class="product-text product-text-color">
                             <span>Lorem Ipsum é um texto fictício da indústria de impressão e composição. 
                                   Lorem Ipsum tem sido o texto fictício padrão da indústria.</span>        
                         </div>
                         <a class="more-info product-text-color">mais informações</a>
-                        <div class="cep-calc product-text-color">
+                        <div class="cep-calc product-text-color" style="width:70%">
                             <label for="cep"><h6>Simular Frete</h6></label>
                             <input type="text" class="form-control" id="cep" placeholder="Informe o seu CEP">
                         </div>
+                        <button type="button" class="btn font-weight-bold btn-cep-mobile" id="btn-cep">OK</button>
 
                         <div class="share product-text-color d-block" style="margin-top:16%; margin-left:50%; position:static">
                             <h6>Compartilhar</h6>
@@ -136,10 +169,10 @@
                 <div class="card-body">
                     <div class="col-sm-8" style="display:inline-block">
                         <label class="font-weight-bold" for="cep-mobile">Calcule o frete e prazo</label>
-                        <input class="form-control form-control-lg cep-mobile d-flex" type="text" placeholder="Digite o cep" name="cep-mobile" id="cep-mobile">
+                        <input type="text" class="form-control form-control-lg cep-mobile d-flex"  placeholder="Digite o cep" id="cep-mobile">
                     </div>
                     
-                    <button type="button" class="btn font-weight-bold btn-cep-mobile">OK</button>
+                    <button type="button" class="btn font-weight-bold btn-cep-mobile" id="btn-cep-mobile">OK</button>
                     
                 </div>
             </div>
@@ -286,7 +319,7 @@
                                 <span class="font-weight-bold" style="font-size:6rem">4.0</span>
                                 <div style="margin-top:2rem">
                                     <div class="stars evaluate" style="font-size:2rem">★★★★☆</div>
-                                    <span class="d-block font-weight-bold" style="margin-left:1.5rem; font-size:13px">Média entre 23 opiniões<span>
+                                    <span class="d-block font-weight-bold" style="font-size:13px; float:right">Média entre 23 opiniões<span>
                                 </div>
                             </div>
                             <hr class="horizontal-line" style="color:#cecece; opacity:1">

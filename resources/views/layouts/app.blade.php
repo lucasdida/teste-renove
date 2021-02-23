@@ -41,9 +41,42 @@
                 </div>
             </nav>      
             <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h4 class="text-white">Collapsed content</h4>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                <div class="p-4" style="background-color:#ff7d7d">
+                    
+                    <div class="container text-center text-md-left">
+                        <div class="row">
+                            <div class="col-md-2 mx-auto footer-text">
+                                <h5 class="font-weight-bold mt-3 mb-4">Departamento</h5>
+                                <ul class="list-unstyled menu-mobile">
+                                    <li>
+                                        <a href="#!">Beleza e Perfumaria</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Moda</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Saúde</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Suplementos e vitaminas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Kit mãe & filha</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Moda</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Saúde</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">T-shirts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -68,14 +101,19 @@
         </nav>
         <nav class="navbar navbar-light navbar-bg-light">
             <div class="col-sm-3">
-                <ul class="navbar-nav mr-auto">
+                <ul class="mr-auto btn-dropdown">
                     <li class="nav-item dropdown">
                         <a class="nav-link" style="color:#ffffff" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <ion-icon name="menu-outline" class="icons-head" style="vertical-align:middle;"></ion-icon><span class="font-weight-bold">Todas as categorias</span><ion-icon name="chevron-down-outline" class="icons-head" style="vertical-align:middle;"></ion-icon>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Categoria 1</a>
-                            <a class="dropdown-item" href="#">Categoria 2</a>
+                            <a class="dropdown-item" href="#">Beleza e Perfumaria</a>
+                            <a class="dropdown-item" href="#">Moda</a>
+                            <a class="dropdown-item" href="#">Saúde</a>
+                            <a class="dropdown-item" href="#">Suplementos e Vitaminas</a>
+                            <a class="dropdown-item" href="#">Kit Mãe e Filha</a>
+                            <a class="dropdown-item" href="#">Saúde</a>
+                            <a class="dropdown-item" href="#">T-Shirts</a>
                         </div>
                     </li>
                 </ul>
@@ -241,6 +279,9 @@
 
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/product.js') }}"></script>
+        <script src="{{ asset('js/jquery.maskedinput-1.1.4.pack.js') }}"></script>
+        <script src="{{ asset('js/jquery-migrate-1.2.1.js') }}"></script>
         <script src="https://kit.fontawesome.com/3c18d26987.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </body>
